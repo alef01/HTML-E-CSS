@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Exercicio</title>
+    <style>/* Exercicio1 */
+
+body {
+    font: 100% Lucida Sans, Verdana;
+    margin: 20px;
+    line-height: 26px;
+    background-color: #32a4e7;
+}
+
+#top {
+    background-color: hotpink;
+    color: #ffffff;
+    padding: 15px;
+}
+
+.item-menu {
+    background-color: hotpink;
+    border: 1px solid greenyellow;
+    list-style-type: none;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.item-menu:hover {
+    background-color: #ffffff;
+}
+
+.item-menu:first-child {
+    background-color:#555555;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#menubar {
+    width: 200px;
+    float: left;
+}
+
+#top h1,
+#top p,
+#menulist {
+    margin: 0;
+    padding: 0;
+}
+
+#top,
+#sidebar,
+#bottom,
+.item-menu {
+    border-radius: 4px;
+    margin: 4px;
+}
+
+#main {
+    padding: 10px;
+    margin: 0 210px;
+    border: 1px solid black;;
+    background-color: blanchedalmond;
+}
+
+#sidebar {
+    background-color: hotpink;
+    color: yellow;
+    padding: 10px;
+    width: 180px;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+#bottom {
+    border: 1px solid #ffffff;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 70%;
+    line-height: 14px;
+    color: #ffffff;
+}
+
+.wrapper {
+    position: relative;
+    overflow: auto;
+}
+
+a {
+    color: #000000;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+</style>
+<style>/* Exercicio 2 */
+body {
+    font-family: Arial;
+    background-color: blue;
+    line-height: 20px;
+}
+
+.wrapper {
+    position: relative;
+    overflow: auto;
+}
+
+#top {
+    color: black;
+    padding: 15px;
+    font-size: 30px;
+    line-height: 26px;
+}
+
+#top h1 {
+    margin: 0;
+    line-height: 50px;
+}
+
+#menubar {
+    float: right;
+    width: 190px;
+    margin-right: 30px;
+}
+
+#menulist {
+    padding: 0;
+    font: 16px verdana;
+}
+
+.item-menu {
+    width: 190px;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 40px;
+    color: #ffffff;
+    list-style-type: none;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+ 
+}
+
+.item-menu:hover {
+    background-color: #ffffff;
+    color: black;
+    text-decoration: none;
+}
+
+.item-menu:nth-child(2) {
+    background-color:blue;
+    color: black;
+    font-weight: bold;
+}
+
+#main {
+    padding: 10px;
+    background-color: #ffffff;
+    font: 80% Verdana;
+}
+
+#main h1,
+#main h2 {
+    color: black;
+}
+
+#sidebar {
+    background-color:brown;
+    color:  black;
+    padding: 10px;
+}
+
+#bottom {
+    text-align: center;
+    padding: 10px;
+    font-size: 90%;
+    color:#ffffff;
+ 
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 500px){
+    body{
+        background-color: yellow;
+    }
+}
+</style>
+<style>/* Exercicio 03 */
+body { 
+    font: 100% Verdana;
+    margin: 20px;
+    line-height: 26px;
+}
+
+.container {
+    xmin-width: 900px;
+}
+
+.wrapper {
+    position: relative;
+    overflow: auto;
+}
+
+#sidebar {
+    background-color: #f1f1f1;
+    border: 1px solid #d4d4d4;
+    padding-left: 10px;
+}
+
+#bottom {
+    text-align: center;
+    padding: 10px;
+    font-size: 70%;
+    line-height: 14px;
+}
+
+h1, h2, h3 {
+    color: #4CAF50;
+}
+
+#menulist {
+    padding: 0;
+    position: relative;
+    overflow: auto;
+}
+
+.item-menu {
+    width: 165px;
+    float: left;
+    background-color: #555555;
+    color: #ffffff;
+    list-style-type: none;
+    margin: 4px;
+    padding: 2px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.item-menu:nth-child(3) {
+   background-color:#4CAF50;
+}
+
+.item-menu:hover {
+    background-color: #999999;
+}
+
+a {
+    color: #000000;
+}
+
+a:hover {
+    color: #84c754;
+}
+</style>
+<style>/* Exercicio 04 */
+body {
+    font: 100% Courier New;
+    margin: 20px;
+    line-height: 26px;
+    background-color: #000000;
+}
+
+.container {
+    xmin-width: 900px;
+}
+
+.wrapper {
+    position: relative;
+    overflow: auto;
+}
+
+#top {
+    color: #84c754;
+    padding: 15px;
+}
+
+#main {
+    padding: 10px;
+    color: #84c754;
+   
+}
+
+#sidebar {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    padding: 10px;
+    width: 320px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    font-size: 80%;
+    line-height: 20px;
+}
+
+#bottom {
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    font-size: 70%;
+    line-height: 14px;
+}
+
+#top h1,#top p {
+    margin: 0;
+}
+
+.item-menu {
+    color: #84c754;
+    cursor: pointer;
+}
+
+.item-menu:nth-child(4) {
+    color:white;
+    font-weight:bold;
+}
+
+}
+.item-menu:hover {
+    color: #ffffff;
+}
+
+a {
+    color: #ffffff;
+}
+
+a:hover {
+    color: #84c754;
+}
+@media (max-width: 600px) {
+    #sidebar {
+       width: auto;
+       margin-bottom:10px;        
+       position: relative;
+    }    
+}
+    </style>
+
+    <style>
+  body{
+
+    background-color: brown;
+  }  
+
+  h1,h2,h3{
+
+    color: beige;
+  }
+
+#top{
+border:  1px solid black;
+color: beige;
+background-color: black;
+text-align: center;
+
+}
+.wrapper {
+    position: relative;
+    overflow: auto;
+}
+
+#menulist {
+    padding: 0;
+    position: relative;
+    overflow: auto;
+}
+.item-menu{
+border: 2px solid blanchedalmond;
+color: blanchedalmond;
+background-color: black;
+list-style-type: none;
+    margin: 4px;
+    padding: 4px;
+    text-align: center;
+    cursor: pointer;
+    width: 177px;
+    float: right;
+}
+
+.item-menu :hover {
+    color: blanchedalmond;
+}
+
+a{
+
+    color: blanchedalmond;
+}
+    </style>
+</head>
+<body>
+   
+    <script>
+        
+        function semEstilo(){
+            document.styleSheets[0].disabled =true;
+            document.styleSheets[1].disabled =true;
+            document.styleSheets[2].disabled =true;
+            document.styleSheets[3].disabled =true;
+            document.styleSheets[4].disabled =true;
+        }
+   
+  
+        //Função que vai mudar a folha de estilo da pagina!!
+        function estilo01(){
+            semEstilo()
+            document.styleSheets[0].disabled =false;
+            
+        }
+        function estilo02(){
+            semEstilo()
+            document.styleSheets[1].disabled =false;
+            ;  
+        }
+        function estilo03(){
+            semEstilo()
+            document.styleSheets[2].disabled =false;
+        }
+        function estilo04(){
+            semEstilo()
+            document.styleSheets[3].disabled = false;  
+        }
+        function estilo05(){
+            semEstilo()
+            document.styleSheets[4].disabled = false;
+        }
+
+        estilo01();
+    </script>
+    
+
+    <div class="wrapper">
+        <div id="top">
+            <h1>Bem-Vindo à minha página inicial</h1>
+            <p>Use o menu para selecionar diferentes folhas de estilo</p>
+        </div>
+        <div class="wrapper">
+            <div id="menubar">
+                <ul id="menulist">
+                    <li onclick="estilo01()" class="item-menu">Folha de estilo 1</li>
+                    <li onclick="estilo02()" class="item-menu">Folha de estilo 2</li>
+                    <li  onclick="estilo03()" class="item-menu">Folha de estilo 3</li>
+                    <li onclick="estilo04()" class="item-menu">Folha de estilo 4</li>
+                    <li onclick="estilo05()" class="item-menu"> Folha com Estilo</li>
+                    <li onclick="semEstilo()" class="item-menu">Sem Folha de estilo</li>
+                    
+                </ul>
+            </div>
+            <div id="main">
+                <h1>Folhas de estilo diferentes na mesma página</h1>
+                <p>Esta é uma demonstração de como diferentes folhas de estilo podem alterar o layout de sua página
+                    HTML.Você pod alterar o layout desta página selecionando diferentes folhas de estilo no menu ou
+                    selecionando um dos seguintes links<br>
+                    <a  onclick="estilo01()" href="#">Folha de estilo 1,</a>
+                    <a  onclick="estilo02()" href="#">Folha de estilo 2,</a>
+                    <a onclick="estilo03()" href="#">Folha de estilo 3,</a>
+                    <a onclick="estilo04()" href="#">Folha de estilo 4.</a>
+                </p>
+                <h2>Sem estilos</h2>
+                <p>Esta página usa elementos DIV para agrupar diferentes seções da página HTML. Clique aqui para ver a
+                    aparência da página sem folha de estilo:
+                    <br>
+                    <a onclick="semEstilo()" href="#">Sem Folha de estilo.</a>
+                </p>
+            </div>
+
+            <div id="sidebar">
+                <h3>Barra Lateral
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet
+                    dolore magna aliquam erat volutpat.
+
+                </p>
+            </div>
+        </div>
+        <div id="bottom">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+            tincidunt
+            ut laoreet
+            dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+            suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
+            vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
+            accumsan et
+            iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla
+            facilisi.
+        </div>
+    </div>
+    
+</body>
+</html>
